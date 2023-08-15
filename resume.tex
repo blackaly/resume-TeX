@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{hyperref}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{avant}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+  \renewcommand{\familydefault}{\sfdefault}
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+
+
+\begin{center}
+.This CV is written in Tex: \url{https://ideone.com/kCX7dS}
+\end{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{{\LARGE Ali Mashally}}
+   & Email: \href{mailto:}{alimuhammadali@proton.me}\\
+  \href{https://github.com/blackaly}{Github: ~~github.com/blackaly} & \href{tel:+201093826899}{EG Number: +201093826899} \\
+  \href{https://codeforces.com/profile/i_alimuhammad}{CodeForces: ~codeforces.com/profile/i\_alimuhammad} \\
+\href{https://www.hackerrank.com/alimashally?hr_r=1}{HackerRank: ~https://www.hackerrank.com/alimashally} \\
+  \href{https://www.linkedin.com/in/ali-mashally/}{LinkedIn: ~https://www.linkedin.com/in/ali-mashally/} \\
+\end{tabular*}
+
+%==== Education ====%
+\header{Education}
+\textbf{Modern Academy}\hfill Cairo, Maadi\\
+Bachelor of Computer Science \hfill Sep 2019 - Present\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Project-Egy} \hfill Remote \& On Site\\
+\textit{Software Engineer (Full-time internship)} \hfill May 2022 - Jul 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Review Requirements: Analyses business requirements in order to design scalable solutions
+	\item Teamwork: Works as a back-end \& agile team member to develop integrations with various platforms.
+	\item Development: Generates, develops and maintains RESTful APIs used by the front-end engineers.
+	\item Automation: Develops automation solutions for enterprises and e-commerces.
+	\item Accomplishment: 
+\begin{itemize} \itemsep 1pt
+	\item I have reduced the response time of a project ( Sanai3yTrend) from 14s to 1s by applying the appropriate
+	data structure, algorithms and the best practices of the Entity Framework.
+	\item I had worked on four E-commerce projects (MedLife, Salamtak, Sanai3yTrend, Wasta)
+\end{itemize}
+		
+\end{itemize}
+
+\header{Skills Summary}
+\begin{tabular}{ l l }
+	\\
+	Languages:   & C\#, C/C++, Php (prior experience), Python and Java (Basics)        \\
+	Frameworks:  & .NET(aka. Core), ASP .NET MVC, .NET Framework, ASP .NET WebApi, Angular  (prior experience) \\
+	Databases:   & MySQL, SQLite, SQL Server                                               \\
+	Unix-System: & Bash-Scripting, Linux System Programming, Docker                        \\
+	Web:         & RESTful WebServices, Swagger/OpenAPI, Google Cloud                      \\
+	Other:       & Git, SSH with Xvfb manipulation         \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{University System (Desktop)}} {\sl Java, SQL} \\
+A desktop application connected with SQL Server, it utilize a CRUD operations on a side server client, manages the student and professor data and calculate the student\textquotesingle{}s GPA. (May 2021)\\
+\vspace*{2mm}
+{\textbf{Lexer Analyzer}} {\sl C++, Make} \\
+A program that perform a lexical analysis that convert a sequence of characters (string) into tokens, performs unstropping to remove newlines, signle line comments and multi-line comments. (Jun 2021)\\
+\vspace*{2mm}
+{\textbf{City Analysis}} {\sl Python} \\
+an analysis project that produce the statistics on the most popular stations and trip, statistics on the total and average trip duration and statistics on bikeshare users. (May 2020)\\
+\vspace*{2mm}
+{\textbf{Library system}} {\sl C\#, WPF, CSV Helper} \\
+a class library to manage author\textquotesingle{}s books data using CSV files by utilizing simple CRUD operations.\\
+\vspace*{2mm}
+{\textbf{MOVIE API}} {\sl ASP .NET CORE Web API, identity, Drapper} \\
+Movie Library System.
+\\
+\vspace*{2mm}
+{\textbf{Classify}} {\sl Python, OOP (Strategy pattern), BBC News Model, NLTK, sklearn, selenium} \\
+Text Classification for News Articles by entering raw text input or the link of supported website in the application.
+\\
+\vspace*{2mm}
+{\textbf{RISC-V (In progress )}} {\sl C} \\
+RISCV is a project under progress trying to re-implement the RISC-V OS, its system programs and its binary files such as (cd, mv, ls, etc..)\\
+\vspace*{2mm}
+\header{Activities}
+\textbf{Modern Academy ECPC Community}\\
+\begin{itemize} \itemsep 1pt
+	\item Participated in the 2022  Egyptian Collegiate Programming Contest.
+	\item 10th Place in the 2022 MAM Collegiate Programming Contest (39 teams participated). REF:\url{https://icpc.global/ICPCID/6VCK89VLPTH4}
+\end{itemize}
+
+\textbf{icmtc}\\
+\begin{itemize} \itemsep 1pt
+	\item Participated in the 2023  The International Competition of the Military Technical College (CTF Contest).
+	\item 52th Place out of 106 in the scoreboard (about 255 teams participated ). REF:\url{https://icmtc.egcert.eg/scoreboard} (Schizophrenia Team)
+\end{itemize}
+
+\end{document}
+
+ \textbf{{\LARGE Ali Mashally}}
