@@ -1,22 +1,21 @@
 \documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{hyperref}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage{avant}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
-  \renewcommand{\familydefault}{\sfdefault}
-    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{avant}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+
+\newcommand{\bull}{\vrule height 0.8ex width .7ex depth -.1ex }
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
@@ -33,7 +32,7 @@
 }
 
 \newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{\textbf{#1}}}  % Added bold and section spacing
     \vspace*{-6pt} \lineunder
 }
 
@@ -66,99 +65,106 @@
     \textbf{#1} #2 $\bullet$ #3\\
     #4 \\
 }
+
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
-
-
-\begin{center}
-.This CV is written in Tex: \url{https://ideone.com/kCX7dS}
-\end{center}
+\begin{document}
+\vspace*{-20mm}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 \textbf{{\LARGE Ali Mashally}}
    & Email: \href{mailto:}{alimuhammadali@proton.me}\\
   \href{https://github.com/blackaly}{Github: ~~github.com/blackaly} & \href{tel:+201093826899}{EG Number: +201093826899} \\
   \href{https://codeforces.com/profile/i_alimuhammad}{CodeForces: ~codeforces.com/profile/i\_alimuhammad} \\
 \href{https://www.hackerrank.com/alimashally?hr_r=1}{HackerRank: ~https://www.hackerrank.com/alimashally} \\
+\href{https://ctflearn.com/user/_ajin}{CTFLearn: ~https://ctflearn.com/user/\_ajin} \\
   \href{https://www.linkedin.com/in/ali-mashally/}{LinkedIn: ~https://www.linkedin.com/in/ali-mashally/} \\
+
 \end{tabular*}
 
-%==== Education ====%
+\header{Introduction}
+I am a dedicated Software Engineer with a strong foundation in computer science fundamentals, specializing in back-end development while also possessing a solid grasp of front-end technologies. My passion for problem-solving and continuous learning drives me to create efficient and innovative solutions. With the successful completion of my military service, I bring a strong work ethic, discipline, and a commitment to excellence to every project.
+
 \header{Education}
-\textbf{Modern Academy}\hfill Cairo, Maadi\\
-Bachelor of Computer Science \hfill Sep 2019 - Present\\
-\vspace{2mm}
 
-%==== Experience ====%
+\textbf{Modern Academy} \hfill Cairo, Maadi
+\\
+Bachelor of Computer Science \hfill Graduated in 2023 with \textbf{very good} grade \\
+
+
 \header{Experience}
-\vspace{1mm}
 
-\textbf{Project-Egy} \hfill Remote \& On Site\\
-\textit{Software Engineer (Full-time internship)} \hfill May 2022 - Jul 2022\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-	\item Review Requirements: Analyses business requirements in order to design scalable solutions
-	\item Teamwork: Works as a back-end \& agile team member to develop integrations with various platforms.
-	\item Development: Generates, develops and maintains RESTful APIs used by the front-end engineers.
-	\item Automation: Develops automation solutions for enterprises and e-commerces.
-	\item Accomplishment: 
-\begin{itemize} \itemsep 1pt
-	\item I have reduced the response time of a project ( Sanai3yTrend) from 14s to 1s by applying the appropriate
-	data structure, algorithms and the best practices of the Entity Framework.
-	\item I had worked on four E-commerce projects (MedLife, Salamtak, Sanai3yTrend, Wasta)
+\textbf{Project-Egy} \hfill Remote \& On Site
+\\
+\textit{Software Engineer (Full-time internship)} \hfill May 2022 - Jul 2022
+\begin{itemize} \itemsep -2pt 
+    \item Reviewed business requirements to design scalable solutions.
+    \item Collaborated as a back-end developer and agile team member to build integrations with various platforms.
+    \item Developed and maintained RESTful APIs used by front-end engineers.
+    \item Implemented automation solutions for enterprises and e-commerces.
+    \item Optimized Sanai3yTrend's response time from 14 seconds to 1 second by applying appropriate data structures, algorithms, and Entity Framework best practices.
+    \item Worked on four E-Commerce projects (MedLife, Salamtak, Sanai3yTrend, Wasta)
 \end{itemize}
-		
+\textbf{DFC} \hfill Remote \& On Site
+\\
+\textit{Software Engineer (Part-time)} \hfill Jan 2024 - NOW
+\begin{itemize} \itemsep -2pt 
+    \item Developed and implemented automation scripts using Python to streamline business processes, reducing manual effort by 35\% and improving operational efficiency.
+    \item Prepared and submitted technical proposals for industry conferences (e.g., Techne), highlighting innovative automation solutions and their business impact.
+    \item Networked with industry experts at conferences to stay updated on emerging technologies and bring new ideas back to the organization.
 \end{itemize}
+
 
 \header{Skills Summary}
-\begin{tabular}{ l l }
-	\\
-	Languages:   & C\#, C/C++, Php (prior experience), Python and Java (Basics)        \\
-	Frameworks:  & .NET(aka. Core), ASP .NET MVC, .NET Framework, ASP .NET WebApi, Angular  (prior experience) \\
-	Databases:   & MySQL, SQLite, SQL Server                                               \\
-	Unix-System: & Bash-Scripting, Linux System Programming, Docker                        \\
-	Web:         & RESTful WebServices, Swagger/OpenAPI, Google Cloud                      \\
-	Other:       & Git, SSH with Xvfb manipulation         \\
+\vspace*{2mm}
+\begin{tabular}{ll}
+    Programming Languages: & C\#, C/C++, PHP (prior experience), Python \\
+    Frameworks: & .NET(aka. Core), ASP .NET MVC, ASP .NET WebApi, Angular\\
+    Databases: & MySQL, SQLite, SQL Server \\
+    Unix-System: & Bash-Scripting, Linux System Programming, Docker \\
+    Web: & RESTful WebServices, Swagger/OpenAPI, Google Cloud Platform (GCP) \\
+    Other: & Git, SSH with Xvfb manipulation \\
+\vspace*{2mm}
 \end{tabular}
-\vspace{2mm}
 
 \header{Projects}
-{\textbf{University System (Desktop)}} {\sl Java, SQL} \\
-A desktop application connected with SQL Server, it utilize a CRUD operations on a side server client, manages the student and professor data and calculate the student\textquotesingle{}s GPA. (May 2021)\\
-\vspace*{2mm}
-{\textbf{Lexer Analyzer}} {\sl C++, Make} \\
-A program that perform a lexical analysis that convert a sequence of characters (string) into tokens, performs unstropping to remove newlines, signle line comments and multi-line comments. (Jun 2021)\\
-\vspace*{2mm}
-{\textbf{City Analysis}} {\sl Python} \\
-an analysis project that produce the statistics on the most popular stations and trip, statistics on the total and average trip duration and statistics on bikeshare users. (May 2020)\\
-\vspace*{2mm}
-{\textbf{Library system}} {\sl C\#, WPF, CSV Helper} \\
-a class library to manage author\textquotesingle{}s books data using CSV files by utilizing simple CRUD operations.\\
-\vspace*{2mm}
-{\textbf{MOVIE API}} {\sl ASP .NET CORE Web API, identity, Drapper} \\
-Movie Library System.
-\\
-\vspace*{2mm}
-{\textbf{Classify}} {\sl Python, OOP (Strategy pattern), BBC News Model, NLTK, sklearn, selenium} \\
-Text Classification for News Articles by entering raw text input or the link of supported website in the application.
-\\
-\vspace*{2mm}
-{\textbf{RISC-V (In progress )}} {\sl C} \\
-RISCV is a project under progress trying to re-implement the RISC-V OS, its system programs and its binary files such as (cd, mv, ls, etc..)\\
-\vspace*{2mm}
+\textbf{CodeHex} {\sl C\#}
+Designed and developed a responsive web application using Angular and Angular Material to streamline problem-solving competitions, enabling real-time judging, scoring. \href{https://github.com/blackaly/CodeHex}{ \sl \textbf{Github}}
+
+\textbf{Soundit} {\sl C\#}
+\\A C\# application that performs lexical analysis to convert a sequence of characters (string) into tokens, removes newlines and comments, and processes YouTube video URLs to extract audio stream URLs and video titles. \href{https://github.com/blackaly/soundit/}{ \sl \textbf{Github}}
+
+\textbf{MOVIE API} {\sl ASP .NET CORE Web API, identity, Drapper}
+\\Movie Library System. \href{https://github.com/blackaly/MovieAPI} {\sl \textbf{Github}}
+
+\textbf{Classify} {\sl Python, OOP (Strategy pattern), BBC News Model, NLTK, sklearn, selenium}
+\\Text Classification for News Articles by entering raw text input or the link of a supported website in the application. \href{https://github.com/blackaly/classify} {\sl \textbf{Github}}
+
+\
+
+\textbf{City Analysis} {\sl Python}
+\\An analysis project that generates statistics on the most popular stations and trips, total and average trip duration, and bikeshare user demographics. (May 2020)
+
+\textbf{Library system} {\sl C\#, WPF, CSV Helper}
+\\A class library for managing authors' books data using CSV files with basic CRUD operations.
+
+\textbf{University System (Desktop)} {\sl Java, SQL}
+\\A desktop application connected with SQL Server, utilizing CRUD operations on a side server client, managing student and professor data, and calculating student GPAs. (May 2021)
+
+
+
 \header{Activities}
-\textbf{Modern Academy ECPC Community}\\
-\begin{itemize} \itemsep 1pt
-	\item Participated in the 2022  Egyptian Collegiate Programming Contest.
-	\item 10th Place in the 2022 MAM Collegiate Programming Contest (39 teams participated). REF:\url{https://icpc.global/ICPCID/6VCK89VLPTH4}
+\textbf{Modern Academy ECPC Community}
+\vspace{-6pt} 
+\begin{itemize} \itemsep -2pt
+    \item Participated in the 2022 Egyptian Collegiate Programming Contest.
+    \item Achieved 10th place in the 2022 MAM Collegiate Programming Contest. [\href{https://icpc.global/ICPCID/6VCK89VLPTH4}{Details}]
 \end{itemize}
 
-\textbf{icmtc}\\
-\begin{itemize} \itemsep 1pt
-	\item Participated in the 2023  The International Competition of the Military Technical College (CTF Contest).
-	\item 52th Place out of 106 in the scoreboard (about 255 teams participated ). REF:\url{https://icmtc.egcert.eg/scoreboard} (Schizophrenia Team)
+\textbf{icmtc}
+\vspace{-6pt} 
+\begin{itemize} \itemsep -2pt
+    \item Participated in the 2023 The International Competition of the Military Technical College (CTF Contest).
+    \item Secured 51st place out of 106 in the scoreboard. [\href{https://icmtc.egcert.eg/scoreboard}{Schizophrenia Team}]
 \end{itemize}
 
 \end{document}
-
- \textbf{{\LARGE Ali Mashally}}
